@@ -1,0 +1,8 @@
+name,type,cost,ability,passive,power,image
+Spare Parts,Scrap,2,"Deplete: Perform the Scavenge action",~,~,"images/art/mechanical-arm.png"
+Circuitry,Scrap,3,"Deplete: Take the top card of the Scrap Deck and place it in your discard pile",~,~,"images/art/cpu.png"
+Drone,Droid,4,"Deplete: Repair 2 damage from a friendly bot",Reassemble,4,"images/art/cyber-eye.png"
+Scout,Walker,5,"Deplete: Deal 2 damage to an enemy bot",Swarm,5,"images/art/walking-turret.png"
+Sentinel,Droid,6,"Deplete: Ready a friendly bot",Reassemble,6,"images/art/battle-mech.png"
+Enforcer,Walker,7,"Deplete: Move an active friendly bot to an empty lane",Swarm,7,"images/art/walking-scout.png"
+Golem,Droid,8,"Deplete: Destroy an enemy bot",Reassemble,8,"images/art/robot-golem.png"

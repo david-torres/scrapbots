@@ -1,0 +1,53 @@
+﻿; layout
+BORDER=RECTANGLE,#000000,.2
+PAGE=21,29.7,PORTRAIT,HV
+DPI=300
+CARDSIZE=6,9
+
+; dataset
+LINK = "scrapbots.csv", name, type, cost, ability, passive, power, image
+
+; vars
+[count] = 7
+[scrap-icon] = "images/art/auto-repair.png"
+[passive-icon] = "images/art/processor.png"
+[deplete-icon] = "images/art/energise.png"
+[power-icon] = "images/art/techno-heart.png"
+
+; cost
+RECTANGLE = 1-[count], 0, 0, 100%, .8, #e2e2e2, #e2e2e2
+PATTERN = 1-[count], [scrap-icon], [cost], .5, -4, 100%, 100%, .5, .5, 0, T, left, center
+
+; name
+FONT = Share Tech Mono, 12, T, #000
+TEXT = 1-[count], "[name]", .5, -3.4, 100%, 100%, left
+
+; type
+FONT = Share Tech Mono, 8, T, #696969
+TEXT = 1-[count], "Type: [type]", -.2, -3.5, 100%, 100%, right
+
+; art
+IMAGE = 1-[count], [image], 2, 2, 2.5, 2.5, T
+
+; passive
+RECTANGLE = 3-[count], 0, 5, 100%, .8, #e2e2e2, #e2e2e2
+IMAGE = 3-[count], [passive-icon], .5, 5.2, .5, .5, 0, T
+; Can't seem to skip the first 2 scrap cards with 3-[count] here because it shifts the data
+IF = [passive] <> "~"
+  FONT = Roboto Mono, 4, T, #000
+  TEXT = 1-[count], "[passive]", 1.2, 5.2, 80%, 100%, left, wordwrap
+ENDIF
+
+; ability
+RECTANGLE = 1-[count], 0, 6, 100%, .8, #e2e2e2, #e2e2e2
+IMAGE = 1-[count], [deplete-icon], .5, 6.2, .5, .5, 0, T
+FONT = Roboto Mono, 4, T, #000
+TEXT = 1-[count], "[ability]", 1.2, 6.2, 80%, 100%, left, wordwrap
+
+; power
+; Can't seem to skip the first 2 scrap cards with 3-[count] here because it shifts the data
+IF = [power] <> "~"
+  FONT = Share Tech Mono, 14, T, #000
+  IMAGE = 1-[count], [power-icon], 5, 8.2, .5, .5, 0, T
+  TEXT = 1-[count], "[power]", 4.8, 8, 1, 1, right
+ENDIF
