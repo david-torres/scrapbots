@@ -4,11 +4,11 @@
 
 ## About This Repo
 
-This repository contains this game design document as well as various files used to generate a playable prototype for the game: Scrapbots. Check out the [License](#license). I'd love it if you'd friend me on Steam [playtest on Tabletop Simulator](#tabletop-simulator) and send me some feedback.
+This repository contains this game design document as well as various files used to generate a playable prototype for the game: Scrapbots. Check out the [License](#license). I'd love it if you'd [playtest on Tabletop Simulator](#tabletop-simulator) and send me some feedback.
 
 ## Summary
 
-Scrapbots is a deck building card battler game set in a post-apocalyptic junk-punk future (Mad Max with robots). You take on the role of a Mechanic, a warlord who commands the remnants of robot armies against their enemies. These warlords are in constant conflict to control the last bits of humanity’s resources. Collect a pile of scrap and cobble together some bots to smash your opponent.
+Scrapbots is a deck building battler card game set in a post-apocalyptic junk-punk future (Mad Max with robots). You take on the role of a Mechanic, a warlord who commands the remnants of robot armies against their enemies. Mechanics are in constant conflict with each other to control the last bits of humanity’s resources. Collect a pile of scrap and cobble together some bots to smash your opponent.
 
 ## Design Goals
 
@@ -84,7 +84,7 @@ If no bot is defending then the opposing player is dealt a Wound.
 
 **Reassemble** [untested/work-in-progress]
 
-An active Droid can be installed as scrap for a Droid built in the same lane. For example, let's say you have an active Drone (4 cost Droid). You choose to Reassemble your Drone, placing a Sentinel face-down in its lane. Drone's scrap cost is now counted against Sentinel's. You install a Spare Parts to complete paying Sentinel's scrap cost and activate it. The scrap installed in Drone remains installed until Sentinel is destroyed.
+An active Droid can be installed as scrap for a Droid built in the same lane. For example, you have an active Drone (4 cost Droid). You choose to Reassemble your Drone, placing a Sentinel (6 cost Droid) face-down in its lane. Sentinel now has Drone installed as scrap. You install a Spare Parts (2 cost scrap) to complete paying Sentinel's scrap cost and activate it. The scrap installed in Drone remains installed until Sentinel is destroyed. Any damage counters that were on the Droid before Reassembling are removed.
 
 **Swarm** [untested/work-in-progress]
 
