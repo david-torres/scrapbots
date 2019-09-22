@@ -1,0 +1,18 @@
+﻿;##################################
+;Poker cards 2.5 x 3.5 - 825 x 1125
+;##################################
+UNIT=INCH
+CARDSIZE=2.75,3.75
+BORDER=NONE
+DPI=300
+
+; background
+RECTANGLE=1,0,0,100%,100%,#000000
+
+; name
+FONT = Share Tech Mono, 32, T, #FFFFFF
+TEXT = 1, "Scrapbots", .3, -1, 100%, 100%, left
+
+; art
+[card-back] = "images/art/auto-repair-white.png"
+IMAGE = 1, [card-back], .5, 1.25, 2, 2, 0,TN

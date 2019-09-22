@@ -1,8 +1,19 @@
-name,type,cost,ability,passive,power,image
-Spare Parts,Scrap,2,"Deplete: Perform the Scavenge action",~,~,"images/art/mechanical-arm.png"
-Circuitry,Scrap,3,"Deplete: Take the top card of the Scrap Deck and place it in your discard pile",~,~,"images/art/cpu.png"
-Drone,Droid,4,"Deplete: Repair 2 damage from a friendly bot",Reassemble,4,"images/art/cyber-eye.png"
-Scout,Walker,5,"Deplete: Deal 2 damage to an enemy bot",Swarm,5,"images/art/walking-turret.png"
-Sentinel,Droid,6,"Deplete: Ready a friendly bot",Reassemble,6,"images/art/battle-mech.png"
-Enforcer,Walker,7,"Deplete: Move an active friendly bot to an empty lane",Swarm,7,"images/art/walking-scout.png"
-Golem,Droid,8,"Deplete: Destroy an enemy bot",Reassemble,8,"images/art/robot-golem.png"
+name,type,cost,energy,attack1cost,attack1,attack2cost,attack2,health,component,tactic,wound,image
+Spare Parts,Component,2,2,0,~,0,~,0,Overdrive: Repair 10 damage,~,~,images/art/mechanical-arm.png
+Circuitry,Component,3,3,0,~,0,~,0,Overdrive: Gain 4 Scrap,~,~,images/art/cpu.png
+Drone,Scrapbot,4,4,2,Deal 10 damage,4,Deal 20 damage and draw a card,40,~,~,~,images/art/cyber-eye.png
+Scout,Scrapbot,5,5,3,Deal 20 damage,5,"Deal 20 damage. Flip a coin: if heads, deal 20 damage to an adjacent Lane",50,~,~,~,images/art/walking-turret.png
+Sentinel,Scrapbot,6,6,3,"Draw a card. Flip a coin 3 times: for each heads, deal 10 damage",6,"Deal 30 damage. Flip a coin: if heads, draw 3 cards",60,~,~,~,images/art/battle-mech.png
+Enforcer,Scrapbot,7,7,4,"Deal 20 damage. Flip a coin: if heads, deal 20 damage to any Lane",6,Deal 20 damage to each Lane,70,~,~,~,images/art/walking-scout.png
+Golem,Scrapbot,8,8,6,"Deal 40 damage. Flip a coin: if heads, return a card from your discard pile to your hand",8,Deal 40 damage. Take a card from the Market and put it on top of your deck,80,~,~,~,images/art/robot-golem.png
+Armor Plating,Component,4,4,0,~,0,~,0,"Overdrive: Repair 20 damage from attached Scrapbot. Flip a coin, if heads, repair an additional 20 damage",~,~,images/art/metal-scales.png
+Chainsaw,Component,5,5,0,~,0,~,0,Overdrive: Deal 30 damage. Deal 10 damage to each adjacent lane,~,~,images/art/chainsaw.png
+Servomotor,Component,6,6,0,~,0,~,0,Overdrive: Ready attached Scrapbot,~,~,images/art/robot-leg.png
+Fusion Cannon,Component,7,7,0,~,0,~,0,"Overdrive: Flip a coin 3 times. For each heads, deal 10 damage to every Lane",~,~,images/art/laser-blast.png
+Rocket Pod,Component,8,8,0,~,0,~,0,Overdrive: Destroy an enemy Scrapbot,~,~,images/art/missile-swarm.png
+Supply Depot,Tactic,4,0,0,~,0,~,0,~,Gain 2 Scrap and draw 2 cards,~,images/art/wooden-crate.png
+Repair Crew,Tactic,5,0,0,~,0,~,0,~,Repair 20 damage from each of your Scrapbots,~,images/art/mighty-spanner.png
+Smash & Grab,Tactic,6,0,0,~,0,~,0,~,Reveal the top card of the Scrap deck then place it on top of your deck,~,images/art/robber.png
+Power Surge,Tactic,7,0,0,~,0,~,0,~,"Choose one of your Scrapbots. Ready and attack with it. Flip a coin: if heads, repeat this card's effect with the chosen Scrapbot.",~,images/art/energise.png
+Teleport,Tactic,8,0,0,~,0,~,0,~,Ready each of your Scrapbots. You may move any of your Scrapbots into an empty Lane,~,images/art/teleport.png
+Head Trauma,Wound,0,0,0,~,0,~,0,~,~,During your draw phase: Discard all Wound cards and draw 2 cards for each Wound discarded this way. This can only occur once per turn,images/art/bleeding-heart.png
