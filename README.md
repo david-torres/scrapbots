@@ -6,21 +6,23 @@
 
 This repository contains this game design document as well as various files used to generate a playable prototype for the game: Scrapbots. Check out the [License](#license). I'd love it if you'd [playtest on Tabletop Simulator](#tabletop-simulator) and send me some feedback.
 
+## Scrapbots: Deck building battler
+
 ## Summary
 
-Scrapbots is a deck building battler card game set in a post-apocalyptic junk-punk future (Mad Max with robots). You take on the role of a Mechanic, a warlord who commands the remnants of robot armies against their enemies. Mechanics are in constant conflict with each other to control the last bits of humanity’s resources. Collect a pile of scrap and cobble together some bots to smash your opponent.
+Scrapbots is a deck building card battler game set in a post-apocalyptic junk-punk future (Mad Max with robots). You take on the role of a Mechanic, a warlord who commands the remnants of robot armies against their enemies. These warlords are in constant conflict to control the last bits of humanity’s resources. Collect a pile of scrap and cobble together some Scrapbots to smash your opponent.
 
 ## Design Goals
 
-The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler that is easy to learn but still has enough strategic/tactical depth to maintain a serious player’s interest. Scrapbots games are intended to last 10-15 minutes.
+The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler that is easy to learn but still has enough strategic/tactical depth to maintain a serious player’s interest. Scrapbots games are intended to last 20-30 minutes.
 
 ## Gameplay
 
-The objective of the game is to defeat the opposing Mechanic. You will achieve this goal by collecting a pile of scrap (your deck) and building bots to attack for you. 
+The objective of the game is to defeat the opposing Mechanic. You will achieve this goal by collecting a pile of scrap (your deck) and building Scrapbots to attack for you. 
 
 ### Setup
 
-Each player starts with an initial personal deck consisting of 4 Spare Parts and 4 Circuitry. Wounds are set to the side. All remaining cards are shuffled and become the Scrap Deck. 3 empty spaces in front of each player represent the lanes which bots will be built in. Deal 5 cards from the Scrap Deck face-up in the center as the Junkyard. Play with your discard pile face-down.
+Each player starts with an initial personal deck consisting of 4 Spare Parts and 4 Circuitry. All remaining cards are shuffled and become the center deck used by both players. 3 empty spaces in front of each player represent the Lanes which Scrapbots will be built in. Deal 5 cards from the center deck face-up on the side as the Market. Draw starting hands, the player going first may only draw three cards for the starting hand. The player going second draws five.
 
 ### Turn Phases
 
@@ -28,7 +30,7 @@ Each turn, the following phases occur:
 
 **Scavenge Phase**
 
-- you may choose to perform the Scavenge action
+- You may take the lowest Scrap cost card from the Market and add it to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the center deck.
 
 **Main Phase**
 
@@ -38,78 +40,92 @@ Each turn, the following phases occur:
 
 - discard any cards remaining in your hand
 
-**Ready Phase**
+**Cleanup Phase**
 
-- ready (turn vertical) any exhausted bots in your lanes
+- unused Scrap is removed from your pool
 
 **Draw Phase**
 
-- draw a hand of 5 cards. If you need to draw a card but are unable to because your deck is empty, shuffle your discard pile into your deck
-
-**First turn of the game**
-The player taking the first turn of the game may only draw 3 cards in their starting hand
+- draw a hand of 5 cards. If you need to draw a card but are unable to because your deck is empty, shuffle your discard pile and it becomes your deck.
+- If you have any Wounds in your hand, discard all of them. Draw 2 cards for each Wound discarded this way.
 
 ### Actions
 
 You may perform the following actions any number of times:
 
-- Buy scrap from the Junkyard
-- Build a bot
-- Install scrap
-- Attack with an active bot
+- Gain Scrap
+- Buy cards from the Market
+- Build a Scrapbot
+- Install Energy
+- Activate Overdrive
+- Play Tactics
+- Attack with a Scrapbot
 
-**Scavenge**
+**Gain Scrap**
 
-Take the lowest scrap cost card from the Junkyard and add it to your discard pile. Whenever a card is removed from the Junkyard, deal a new card to the Junkyard from the Scrap Deck.
+Discard a card from your hand to add its Scrap value to your pool. 
 
-**Buy scrap from the Junkyard**
+**Buy cards from the Market**
 
-Reveal and discard cards from your hand with scrap cost equal to or greater than the scrap cost of a card from the Junkyard to add that card to your discard pile. Whenever a card is removed from the Junkyard, deal a new card to the Junkyard from the Scrap Deck.
+Remove Scrap from your pool equal to the value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the center deck.
 
-**Build a bot**
+**Build a Scrapbot**
 
-Play a card from your hand face-down into an empty lane to build it. Until enough scrap has been installed to meet or exceed its scrap cost, the bot will remain inactive (face-down) and cannot attack or defend its lane. Bots cannot be moved or replaced once they have been built.
+Play a Scrapbot from your hand into an empty Lane. Scrapbots cannot be moved or replaced once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted.
 
-**Install scrap**
+**Install Energy**
 
-Play a card from your hand under an inactive bot. It’s scrap cost is counted against the inactive bot’s scrap cost. When the bot’s scrap cost is met or exceeded by the scrap that has been installed, it is activated (flipped face-up), but enters play exhausted (turned sideways). Stack installed scrap underneath the active bot. Installed scrap is only discarded when the bot is destroyed.
+Attach a card with Energy (Components and Scrapbots) from your hand onto a Scrapbot to increase its Energy. It should be rotated so that the Energy symbols and Overdrive abilities are face-up and placed beneath the Scrapbot so that all installed Energy is visible at the top of the Scrapbot. When played as Energy, that card will remain attached to the Scrapbot it was installed on until that Scrapbot is destroyed.
 
-**Attack with an active bot**
+**Activate Overdrive**
 
-Only bots that are active and not exhausted may attack.
+Remove an installed Component from one of your Scrapbots to trigger it's Overdrive effect. Follow the card text then put that card into your discard pile. 
 
-Exhaust (turn sideways) an active bot to attack its lane. If that lane has an active bot in the opposing lane, that bot is defending. Bots simultaneously deal damage to each other equal to their power, placing that many damage counters on the opposing bot. If at any time a bot has damage counters that meet or exceed its power, it is destroyed and placed in it’s owner’s discard pile along with all installed scrap.
+**Play Tactics**
 
-If no bot is defending then the opposing player is dealt a Wound.
+Play a Tactics card from your hand and follow the card text then put that card into your discard pile.
 
-**Reassemble** [untested/work-in-progress]
+**Attack with a Scrapbot**
 
-An active Droid can be installed as scrap for a Droid built in the same lane. For example, you have an active Drone (4 cost Droid). You choose to Reassemble your Drone, placing a Sentinel (6 cost Droid) face-down in its lane. Sentinel now has Drone installed as scrap. You install a Spare Parts (2 cost scrap) to complete paying Sentinel's scrap cost and activate it. The scrap installed in Drone remains installed until Sentinel is destroyed. Any damage counters that were on the Droid before Reassembling are removed.
+Only Ready Scrapbots may attack. 
 
-**Swarm** [untested/work-in-progress]
+Choose a Scrapbot attack that has an Energy cost less than or equal to the amount of Energy installed on that Scrapbot. Exhaust the Scrapbot and deal damage as specified by the ability.
 
-The scrap cost needed to activate Walkers is reduced by 1 for each active Walker. For example, you have a Scout in play and your opponent also has a Scout, the cost to activate an Enforcer (7 cost Walker) is reduced by 2 (5 scrap needed to activate).
+*Trophies*
 
-**Deplete** [untested/work-in-progress]
+If damage dealt during an attack destroys an opposing Scrapbot, the attacking player may choose to obtain one card that was attached to the defeated Scrapbot. It may be immediately installed to the attacking Scrapbot or added to the discard pile.
 
-Deplete a card by taking it from your hand and removing it from the game. Perform the action stated.
+*Wounds*
+
+If there is no Scrapbot in an attacked Lane then the opposing player is dealt a Wound for each 10 points of undefended attack damage. Wounds are added to that player’s discard pile. 
+
 
 ### Winning the Game
 
-A player is eliminated when they have been dealt 3 Wounds, the surviving player is the winner!
+The game ends when the last Wound has been dealt. The players add up all Wounds in their hands, decks, and discard piles. The player with the least Wounds is the winner!
 
-## Card List
+### Card List
 
 - 8x Spare Parts
 - 8x Circuitry
+- 8x Armor Plating
+- 8x Chainsaw
+- 8x Servomoter
+- 4x Fusion Cannon
+- 4x Missle Launcher
 - 8x Drone
 - 8x Scout
 - 8x Sentinel
 - 4x Enforcer
 - 4x Golem
-- 5x Wounds
+- 4x Supply Depot
+- 4x Repair Crew
+- 4x Smash & Grab
+- 2x Power Surge
+- 2x Teleport
+- 20x Wounds
 
-## Artwork
+### Artwork
 
 Artwork by [Game-icons.net](https://game-icons.net/) and made available under the [Creative Commons 3.0 BY license](http://creativecommons.org/licenses/by/3.0/).
 
@@ -117,9 +133,9 @@ Artwork by [Game-icons.net](https://game-icons.net/) and made available under th
 
 [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) and [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)
 
-## Building/Modifying
+### Building/Modifying
 
-### Nandeck
+#### Nandeck
 
 Scrapbots cards can be generated using [Nandeck](http://www.nand.it/nandeck/).
 
@@ -127,17 +143,17 @@ Scrapbots cards can be generated using [Nandeck](http://www.nand.it/nandeck/).
 
 [Scrapbots Data](scrapbots.csv)
 
-### TTS Deck Editor
+#### TTS Deck Editor
 
 Scrapbots deck images can be generated for Tabletop Simulator using TTS Deck Editor (included with Tabletop Simulator).
 
 [Scrapbots TTS Deck](scrapbots.tsdb)
 
-### Tabletop Simulator
+#### Tabletop Simulator
 
 [Play Scrapbots on Tabletop Simulator](https://steamcommunity.com/sharedfiles/filedetails/?id=1631921788)
 
-## License
+### License
 
 This work licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. In plain english: you may use and adapt this work for **NON-COMMERCIAL** purposes, provided that you:
   1.  Give me credit (linking to this page would suffice)
