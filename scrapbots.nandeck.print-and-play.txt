@@ -1,7 +1,7 @@
 ﻿;###################################
 ; Poker cards 2.5 x 3.5 - 825 x 1125
 ; Generates Scrapbots deck suitable
-; for upload to GameCrafter/TTS
+; for print-and-play
 ;###################################
 UNIT=INCH
 PAGE=8.5,11,PORTRAIT,HV
@@ -10,10 +10,11 @@ BORDER=NONE
 DPI=300
 
 ; dataset
+LINKMULTI = amount
 LINK = "scrapbots.csv", name, type, cost, energy, attack1cost, attack1, attack2cost, attack2, health, component, tactic, wound, image, amount
 
 ; vars
-[count] = 18
+[count] = 111
 [scrap-icon] = "images/art/auto-repair.png"
 [tactic-icon] = "images/art/digital-trace.png"
 [health-icon] = "images/art/techno-heart.png"
@@ -92,7 +93,6 @@ IF = [energy] <> "0"
   PATTERN = 1-[count], [energy-icon], [energy], -.3, 1.53, 100%, 100%, .2, .2, 180, T, right, center
 ENDIF
 
-;Comment the lines below before uploading
-;RECTANGLE=1-[count],.19,.19,2.345,3.5,#FFF,empty,.1
-;RECTANGLE=1-[count],0.125,0.125,2.5,3.5,#FF0000,empty,0.01
+; Comment the lines below before uploading
+RECTANGLE=1-[count],0.125,0.125,2.5,3.5,#FF0000,empty,0.01
 ;RECTANGLE=1-[count],0.25,0.25,2.25,3.25,#0000FF,empty,0.01

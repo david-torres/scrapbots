@@ -1,6 +1,8 @@
-﻿;##################################
-;Poker cards 2.5 x 3.5 - 825 x 1125
-;##################################
+﻿;###################################
+; Poker cards 2.5 x 3.5 - 825 x 1125
+; Generates Scrapbots back suitable
+; for upload to GameCrafter
+;###################################
 UNIT=INCH
 CARDSIZE=2.75,3.75
 BORDER=NONE
