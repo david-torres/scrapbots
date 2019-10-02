@@ -9,6 +9,8 @@ CARDSIZE=2.75,3.75
 BORDER=NONE
 DPI=300
 
+;ZOOM = 83
+
 ; dataset
 LINK = "scrapbots.csv", name, type, cost, energy, attack1cost, attack1, attack2cost, attack2, health, component, tactic, wound, image, amount
 
