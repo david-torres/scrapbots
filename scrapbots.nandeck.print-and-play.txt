@@ -14,7 +14,7 @@ LINKMULTI = amount
 LINK = "scrapbots.csv", name, type, cost, energy, attack1cost, attack1, attack2cost, attack2, health, component, tactic, wound, image, amount
 
 ; vars
-[count] = 111
+[count] = 100
 [scrap-icon] = "images/art/auto-repair.png"
 [tactic-icon] = "images/art/digital-trace.png"
 [health-icon] = "images/art/techno-heart.png"
