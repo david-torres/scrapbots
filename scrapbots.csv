@@ -1,19 +1,19 @@
 name,type,cost,energy,attack1cost,attack1,attack2cost,attack2,health,component,tactic,wound,image,amount
-Spare Parts,Component,2,2,0,~,0,~,0,Repair 10 damage,~,~,images/art/mechanical-arm.png,8
-Circuitry,Component,3,3,0,~,0,~,0,Choose a card from your discard pile and put it on top of your deck,~,~,images/art/cpu.png,8
-Drone,Scrapbot,4,4,2,Deal 10 damage,4,Deal 20 damage and draw a card,40,~,~,~,images/art/cyber-eye.png,8
-Scout,Scrapbot,5,5,3,Deal 20 damage,5,"Deal 20 damage. Flip a coin: if heads, deal 20 damage to an adjacent Lane",50,~,~,~,images/art/walking-turret.png,8
-Sentinel,Scrapbot,6,6,3,"Draw a card. Flip a coin 3 times: for each heads, deal 10 damage",6,"Deal 30 damage. Flip a coin: if heads, draw 3 cards",60,~,~,~,images/art/battle-mech.png,5
-Enforcer,Scrapbot,7,7,4,"Deal 20 damage. Flip a coin: if heads, deal 20 damage to any Lane",6,Deal 20 damage to each Lane,70,~,~,~,images/art/walking-scout.png,3
-Golem,Scrapbot,8,8,6,"Deal 40 damage. Flip a coin: if heads, return a card from your discard pile to your hand",8,Deal 40 damage. Take a card from the Market and put it on top of your deck,80,~,~,~,images/art/robot-golem.png,2
-Armor Plating,Component,4,4,0,~,0,~,0,"Repair 20 damage from attached Scrapbot. Flip a coin, if heads, repair an additional 20 damage",~,~,images/art/metal-scales.png,8
-Chainsaw,Component,5,5,0,~,0,~,0,Deal 30 damage. Deal 10 damage to each adjacent lane,~,~,images/art/chainsaw.png,8
+Spare Parts,Component,1,2,0,~,0,~,0,~,~,~,images/art/mechanical-arm.png,8
+Circuitry,Component,2,3,0,~,0,~,0,Draw a card,~,~,images/art/cpu.png,8
+Drone,Scrapbot,4,4,2,Deal 10 damage,4,Deal 10 damage. Draw a card,40,~,~,~,images/art/cyber-eye.png,8
+Scout,Scrapbot,5,5,3,Deal 20 damage,5,"Deal 20 damage. Flip a coin: if heads, deal 10 splash damage",50,~,~,~,images/art/walking-turret.png,8
+Sentinel,Scrapbot,6,6,3,"Draw a card. Flip a coin: if heads, deal 30 damage",6,"Deal 40 damage. Flip a coin: if heads, draw 2 cards",60,~,~,~,images/art/battle-mech.png,5
+Enforcer,Scrapbot,7,7,4,"Deal 20 damage. Flip a coin: if heads, deal 10 splash damage",6,Deal 20 damage. Deal 20 splash damage,70,~,~,~,images/art/walking-scout.png,3
+Golem,Scrapbot,8,8,6,"Deal 40 damage. Flip a coin: if heads, draw 2 cards",8,Deal 40 damage. Draw 4 cards,80,~,~,~,images/art/robot-golem.png,2
+Armor,Component,4,4,0,~,0,~,0,"Repair 10 damage. Flip a coin, if heads, repair 20 damage",~,~,images/art/metal-scales.png,8
+Chainsaw,Component,5,5,0,~,0,~,0,Deal 20 damage. Deal 10 splash damage,~,~,images/art/chainsaw.png,8
 Servomotor,Component,6,6,0,~,0,~,0,Ready attached Scrapbot,~,~,images/art/robot-leg.png,5
-Fusion Cannon,Component,7,7,0,~,0,~,0,"Flip a coin 3 times. For each heads, deal 10 damage to every Lane",~,~,images/art/laser-blast.png,3
+Fusion Cannon,Component,7,7,0,~,0,~,0,"Deal 30 damage. Flip a coin: if heads, deal 30 splash damage",~,~,images/art/laser-blast.png,3
 Rocket Pod,Component,8,8,0,~,0,~,0,Destroy an enemy Scrapbot,~,~,images/art/missile-swarm.png,2
 Supply Depot,Tactic,4,0,0,~,0,~,0,~,Gain 2 Scrap and draw 2 cards,~,images/art/wooden-crate.png,5
-Repair Crew,Tactic,5,0,0,~,0,~,0,~,Repair 20 damage from each of your Scrapbots,~,images/art/mighty-spanner.png,3
-Smash & Grab,Tactic,6,0,0,~,0,~,0,~,Choose a random card from your opponent's hand. Put that card on top of your deck,~,images/art/robber.png,2
-Power Surge,Tactic,7,0,0,~,0,~,0,~,"Choose one of your Scrapbots. Ready and attack with it. Flip a coin: if heads, repeat this card's effect with the chosen Scrapbot",~,images/art/energise.png,1
+Repair Crew,Tactic,5,0,0,~,0,~,0,~,Repair up to 50 damage from your Scrapbots,~,images/art/mighty-spanner.png,3
+Power Surge,Tactic,6,0,0,~,0,~,0,~,Exhaust all enemy Scrapbots,~,images/art/energise.png,2
+Logic Bomb,Tactic,7,0,0,~,0,~,0,~,Draw 3 cards. Deal 20 damage to the center Lane and 10 splash damage,~,images/art/cpu-shot.png,1
 Teleport,Tactic,8,0,0,~,0,~,0,~,Ready each of your Scrapbots. You may move any of your Scrapbots into an empty Lane,~,images/art/teleport.png,1
 Head Trauma,Wound,0,0,0,~,0,~,0,~,~,During your draw phase: Discard all Wound cards and draw 2 cards for each Wound discarded this way,images/art/bleeding-heart.png,20

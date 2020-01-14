@@ -26,10 +26,6 @@ Each player starts with an initial personal deck consisting of 4 Spare Parts and
 
 Each turn, the following phases occur:
 
-**Scavenge Phase**
-
-- You may take the lowest Scrap cost card from the Market and add it to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the center deck.
-
 **Main Phase**
 
 - take actions or choose to pass
@@ -50,7 +46,7 @@ Each turn, the following phases occur:
 
 ### Actions
 
-You may perform the following actions any number of times:
+You may perform the following actions any number of times during your Main Phase:
 
 - Gain Scrap
 - Buy cards from the Market
@@ -99,6 +95,24 @@ If there is no Scrapbot in an attacked Lane then the opposing player is dealt a 
 ### Winning the Game
 
 The game ends when the last Wound has been dealt. Each player adds up all Wounds in their hands, decks, and discard piles. The player with the least Wounds is the winner!
+
+### Terms
+market: the row of cards currently available for purchase
+
+scrap: The primary currency of Scrapbots, used to obtain cards from the Market. Gain scrap by discarding cards from your hand.
+
+scrapbot: The units of Scrapbots. Only Ready scrapbots may attack. Scrapbots need to have energy attached to them to power their attacks.
+
+energy: scrapbots and components can be used to provide energy. Energy is attached to a scrapbot to power its attacks.
+
+component: a component can be attached to a Scrapbot to provide energy as well as a powerful Overdrive effect.
+
+overdrive: a powerful effect provided by a component. Only a component that has been attached since the start of your turn can have its Overdrive effect triggered. Resolve the card text then put the component into your discard pile.
+
+ready: flip a scrapbot face-up to Ready it. Only ready scrapbots may attack.
+
+exhausted: flip a scrapbot face-down to Exhaust it. Exhausted scrapbots may not attack.
+
 
 
 ### Card List

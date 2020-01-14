@@ -95,6 +95,8 @@ IF = [energy] <> "0"
   PATTERN = 1-[count], [energy-icon], [energy], -.3, 1.53, 100%, 100%, .2, .2, 180, T, right, center
 ENDIF
 
+RECTANGLE = 1-[count], .2, .2, 2.35, 3.35, #000000, empty, .1
+
 ; Comment the lines below before uploading
 ;RECTANGLE=1-[count],0.125,0.125,2.5,3.5,#FF0000,empty,0.01
 ;RECTANGLE=1-[count],0.25,0.25,2.25,3.25,#0000FF,empty,0.01
