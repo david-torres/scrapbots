@@ -20,7 +20,7 @@ The objective of the game is to defeat the opposing Mechanic. You will achieve t
 
 ### Setup
 
-Each player starts with an initial personal deck consisting of 4 Spare Parts and 4 Circuitry. All remaining cards are shuffled and become the center deck. 3 empty spaces in front of each player represent the Lanes which Scrapbots will be built in. Deal 5 cards from the center deck face-up on the side as the Market. Draw starting hands, the player going first may only draw three cards for the starting hand. The player going second draws five.
+Each player starts with an initial personal deck consisting of 4 Spare Parts and 4 Circuitry. All remaining cards are shuffled and become the center deck. 3 empty spaces in front of each player represent the Lanes which Scrapbots will be built in. Deal 5 cards from the center deck face-up on the side as the Market. Each player shuffles their deck and draws a starting hand, the player going first may only draw three cards for the starting hand. The player going second draws five.
 
 ### Turn Phases
 
@@ -36,28 +36,31 @@ Each turn, the following phases occur:
 
 **Cleanup Phase**
 
-- unused Scrap is removed
+- unused Scrap and Energy is removed from your pool
 - Ready (flip face-up) any Exhausted (flipped face-down) Scrapbots in your Lanes
 
 **Draw Phase**
 
 - draw a hand of 5 cards. If at any point in the game you need to draw a card but are unable to because your deck is empty, shuffle your discard pile and it becomes your deck.
-- If you have any Wounds in your hand, discard all of them. Draw 2 cards for each Wound discarded this way. 
+- If you have any Wounds in your hand, discard all of them. Draw 2 cards for each Wound discarded this way.
 
 ### Actions
 
 You may perform the following actions any number of times during your Main Phase:
 
 - Gain Scrap
+- Gain Energy
 - Buy cards from the Market
 - Build a Scrapbot
-- Install Energy
-- Activate Overdrive
+- Activate a Component
 - Play Tactics
 - Attack with a Scrapbot
 
 **Gain Scrap**
-Discard a card from your hand to add its Scrap value to your pool. 
+Discard a card from your hand to add its Scrap value to your pool.
+
+**Gain Energy**
+Discard a Component card from your hand to add its Energy value to your pool.
 
 **Buy cards from the Market**
 Remove Scrap from your pool equal to the value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the center deck.
@@ -65,28 +68,28 @@ Remove Scrap from your pool equal to the value of a card in the Market and add t
 **Build a Scrapbot**
 Play a Scrapbot from your hand into an empty Lane. Scrapbots cannot be moved or replaced once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted (flipped face-down).
 
-**Install Energy**
-Attach a card with Energy from your hand onto a Scrapbot to install Energy. It should be rotated so that the Energy symbols and Overdrive abilities are face-up and placed beneath the Scrapbot so that all installed Energy is visible at the top of the Scrapbot. When played as Energy, that card will remain attached to the Scrapbot it was installed on until that Scrapbot is destroyed.
+**Activate a Component**
+Choose one of your Ready Scrapbots to activate the Component. Play a Component card from your hand and follow the card text then put that card into your discard pile.
 
-**Activate Overdrive**
-Remove an installed Component from one of your Scrapbots to activate it's Overdrive effect. Follow the card text then put that card in your discard pile.
+You may not activate a component if you do not have a Ready Scrapbot in play.
 
-You may only activate the Overdrive effect of a Component that has been attached to a Scrapbot since the start of your turn.
-
-**Play Tactics**
-Play a Tactics card from your hand and follow the card text then put that card into your discard pile.
+**Play Resources**
+Play a Resource card from your hand and follow the card text then put that card into your discard pile.
 
 **Attack with a Scrapbot**
 Only Scrapbots that are Ready (flipped face-up) may attack.
 
 Exhaust (flip face-down) a Scrapbot to indicate that it has used an attack.
 
-You may choose to attack with any Scrapbot ability that has an Energy cost less than or equal to the amount of Energy installed on that Scrapbot.
+You must choose to attack with a Scrapbot ability that has an Energy cost less than or equal to the amount of Energy currently in your pool.
 
 Add damage counters to the opposing Scrapbot equal to the amount of damage dealt.
 
+*Dealing Splash Damage*
+Splash damage is dealt to Lanes that are adjacent to the source of damage.
+
 *Destroying Scrapbots*
-If the damage dealt after an attack would equal or exceed the amount of Health that the opposing Scrapbot has, that Scrapbot is destroyed. Place the destroyed Scrapbot and all attached cards in its owner's discard pile.
+If the damage dealt after an attack would equal or exceed the amount of Health that the opposing Scrapbot has, that Scrapbot is destroyed. Place the destroyed Scrapbot in its owner's discard pile.
 
 *Dealing Wounds*
 If there is no Scrapbot in an attacked Lane then the opposing player is dealt a Wound for each 10 points of undefended damage. Wounds are placed in your opponents discard pile.
@@ -94,7 +97,7 @@ If there is no Scrapbot in an attacked Lane then the opposing player is dealt a 
 
 ### Winning the Game
 
-The game ends when the last Wound has been dealt. Each player adds up all Wounds in their hands, decks, and discard piles. The player with the least Wounds is the winner!
+The game ends when the last Wound has been dealt. Each player adds up all Wounds in their hand, deck, and discard pile. The player with the least Wounds is the winner!
 
 ### Terms
 market: the row of cards currently available for purchase

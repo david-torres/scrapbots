@@ -42,44 +42,52 @@ IMAGE = 1-[count], [image], .9, .7, 35%, 35%, 0, TP
 
 ; health
 IF = [health] <> "0"
-  IMAGE = 1-[count], [health-icon], 2.2, 1.9, .3, .3, 0, T
+  IMAGE = 1-[count], [health-icon], 2.2, 2.3, .3, .3, 0, T
   FONT = Share Tech Mono, 24, T, #000
-  TEXT = 1-[count], "[health]", 1.82, 1.57, 1, 1, left
+  TEXT = 1-[count], "[health]", 1.82, 1.97, 1, 1, left
 ENDIF
 
 ; attack1
 IF = [attack1] <> "~"
-  RECTANGLE = 1-[count], .25, 2.2, 82%, .4, #e2e2e2, #e2e2e2
+  RECTANGLE = 1-[count], .25, 2.6, 82%, .4, #e2e2e2, #e2e2e2
   ;IMAGE = 1-[count], [attack-icon], .4, 2.55, .2, .2, 0, T
-  PATTERN = 1-[count], [energy-icon], [attack1cost], .35, 2.07, 80%, 10%, .1, .1, 0, T, left, center
+  PATTERN = 1-[count], [energy-icon], [attack1cost], .35, 2.47, 80%, 10%, .1, .1, 0, T, left, center
   FONT = Roboto Mono, 8, T, #000
-  TEXT = 1-[count], "[attack1]", .35, 2.3, 78%, 100%, left, wordwrap
+  TEXT = 1-[count], "[attack1]", .35, 2.7, 78%, 100%, left, wordwrap
 ENDIF
 
 ; attack2
 IF = [attack2] <> "~"
-  RECTANGLE = 1-[count], .25, 2.7, 82%, .4, #e2e2e2, #e2e2e2
+  RECTANGLE = 1-[count], .25, 3.1, 82%, .4, #e2e2e2, #e2e2e2
   ;IMAGE = 1-[count], [attack-icon], .4, 2.95, .2, .2, 0, T
-  PATTERN = 1-[count], [energy-icon], [attack2cost], .35, 2.57, 80%, 10%, .1, .1, 0, T, left, center
+  PATTERN = 1-[count], [energy-icon], [attack2cost], .35, 2.97, 80%, 10%, .1, .1, 0, T, left, center
   FONT = Roboto Mono, 8, T, #000
-  TEXT = 1-[count], "[attack2]", .35, 2.8, 78%, 100%, left, wordwrap
+  TEXT = 1-[count], "[attack2]", .35, 3.2, 78%, 100%, left, wordwrap
 ENDIF
 
 ; tactic
 IF = [tactic] <> "~"
   RECTANGLE = 1-[count], .25, 2.5, 82%, .7, #e2e2e2, #e2e2e2
-  IMAGE = 1-[count], [tactic-icon], .4, 2.55, .2, .2, 0, T
+  ;IMAGE = 1-[count], [tactic-icon], .4, 2.55, .2, .2, 0, T
   FONT = Roboto Mono, 8, T, #000
-  TEXT = 1-[count], "Play: [tactic]", .75, 2.53, 60%, 100%, left, wordwrap
+  TEXT = 1-[count], "Play: [tactic]", .35, 2.53, 78%, 100%, left, wordwrap
 ENDIF
 
 ; component
 IF = [component] <> "~"
-  RECTANGLE = 1-[count], .24, 2.8, 82%, .5, #e2e2e2, #e2e2e2
-  HTMLFONT = roboto, "Roboto Mono", 8,, #000, left
-  HTMLMARGINS = roboto, 0, 0, 0, 0, top
-  HTMLTEXT = 1-[count], "[name] Overdrive: [component]", .3, -.5, 78%, 100%, #000, 180, EB, 100, roboto
+  RECTANGLE = 1-[count], .25, 2.5, 82%, .5, #e2e2e2, #e2e2e2
+  ;IMAGE = 1-[count], [component-icon], .4, 2.55, .2, .2, 0, T
+  FONT = Roboto Mono, 8, T, #000
+  TEXT = 1-[count], "Activate: [component]", .35, 2.53, 78%, 100%, left, wordwrap
 ENDIF
+
+; component
+;IF = [component] <> "~"
+;  RECTANGLE = 1-[count], .24, 2.8, 82%, .5, #e2e2e2, #e2e2e2
+;  HTMLFONT = roboto, "Roboto Mono", 8,, #000, left
+;  HTMLMARGINS = roboto, 0, 0, 0, 0, top
+;  HTMLTEXT = 1-[count], "[name] Overdrive: [component]", .3, -.5, 78%, 100%, #000, 180, EB, 100, roboto
+;ENDIF
 
 ; wound
 IF = [wound] <> "~"
@@ -90,8 +98,12 @@ ENDIF
 
 ; energy
 IF = [energy] <> "0"
-  RECTANGLE = 1-[count], .24, 3.3, 82%, .2, #e2e2e2, #e2e2e2
-  PATTERN = 1-[count], [energy-icon], [energy], -.3, 1.53, 100%, 100%, .2, .2, 180, T, right, center
+  ;RECTANGLE = 1-[count], .24, 3.3, 82%, .2, #e2e2e2, #e2e2e2
+  PATTERN = 1-[count], [energy-icon], [energy], -.35, 1.45, 100%, 100%, .25, .25, 0, T, right, center
+
+  FONT = Share Tech Mono, 22, T, #000
+  ;TEXT = 1-[count], [energy], -.6, 1.425, 100%, 100%, right
+  ;IMAGE = 1-[count], [energy-icon], 2.16, 3.1, .35, .35, 0, T
 ENDIF
 
 RECTANGLE = 1-[count], .19, .19, 2.38, 3.38, #000000, empty, .125
