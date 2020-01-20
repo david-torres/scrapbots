@@ -1,19 +1,19 @@
 name,type,cost,energy,attack1cost,attack1,attack2cost,attack2,health,component,tactic,wound,image,amount
 Spare Parts,Component,1,1,0,~,0,~,0,~,~,~,images/art/mechanical-arm.png,8
-Circuitry,Component,2,2,0,~,0,~,0,Draw a card,~,~,images/art/cpu.png,8
-Drone,Scrapbot,4,0,2,Deal 10 damage,4,Deal 10 damage. Draw a card,40,~,~,~,images/art/cyber-eye.png,8
-Scout,Scrapbot,5,0,3,Deal 20 damage,5,"Deal 20 damage. Flip a coin: if heads, deal 10 splash damage",50,~,~,~,images/art/walking-turret.png,8
-Sentinel,Scrapbot,6,0,3,"Draw a card. Flip a coin: if heads, deal 30 damage",6,"Deal 40 damage. Flip a coin: if heads, draw 2 cards",60,~,~,~,images/art/battle-mech.png,5
-Enforcer,Scrapbot,7,0,4,"Deal 20 damage. Flip a coin: if heads, deal 10 splash damage",6,Deal 20 damage. Deal 20 splash damage,70,~,~,~,images/art/walking-scout.png,3
-Golem,Scrapbot,8,0,6,"Deal 40 damage. Flip a coin: if heads, draw 2 cards",8,Deal 40 damage. Draw 4 cards,80,~,~,~,images/art/robot-golem.png,2
-Armor Plate,Component,4,4,0,~,0,~,0,"Repair 10 damage. Flip a coin, if heads, repair 20 damage",~,~,images/art/metal-scales.png,8
-Chainsaw,Component,5,5,0,~,0,~,0,Deal 20 damage. Deal 10 splash damage,~,~,images/art/chainsaw.png,8
+Circuitry,Component,2,2,0,~,0,~,0,Draw 1,~,~,images/art/cpu.png,8
+Drone,Scrapbot,4,0,2,10 damage,4,10 damage. Draw 1,40,~,~,~,images/art/cyber-eye.png,8
+Scout,Scrapbot,5,0,3,20 damage,5,"20 damage. Flip a coin: if heads, 10 splash damage",50,~,~,~,images/art/walking-turret.png,8
+Sentinel,Scrapbot,6,0,3,"Draw 1. Flip a coin: if heads, 30 damage",6,"40 damage. Flip a coin: if heads, draw 2",60,~,~,~,images/art/battle-mech.png,5
+Enforcer,Scrapbot,7,0,4,"20 damage. Flip a coin: if heads, 10 splash damage",6,20 damage. 20 splash damage,70,~,~,~,images/art/walking-scout.png,3
+Golem,Scrapbot,8,0,6,"40 damage. Flip a coin: if heads, draw 2",8,40 damage. Draw 4,80,~,~,~,images/art/robot-golem.png,2
+Armor Plate,Component,4,4,0,~,0,~,0,"Repair 10. Flip a coin: if heads, repair 20",~,~,images/art/metal-scales.png,8
+Chainsaw,Component,5,5,0,~,0,~,0,20 damage. 10 splash damage,~,~,images/art/chainsaw.png,8
 Servomotor,Component,6,6,0,~,0,~,0,Ready this Scrapbot after its next attack,~,~,images/art/robot-leg.png,5
-Laser Cannon,Component,7,7,0,~,0,~,0,"Deal 30 damage. Flip a coin: if heads, deal 30 splash damage",~,~,images/art/laser-blast.png,3
+Laser Cannon,Component,7,7,0,~,0,~,0,"30 damage. Flip a coin: if heads, 30 splash damage",~,~,images/art/laser-blast.png,3
 Rocket Pod,Component,8,8,0,~,0,~,0,Destroy the enemy Scrapbot in this Lane,~,~,images/art/missile-swarm.png,2
-Supply Crate,Resource,4,0,0,~,0,~,0,~,Gain 2 Energy and draw 2 cards,~,images/art/wooden-crate.png,5
-Repair Kit,Resource,5,0,0,~,0,~,0,~,Repair up to 50 damage from your Scrapbots,~,images/art/mighty-spanner.png,3
+Supply Crate,Resource,4,0,0,~,0,~,0,~,Gain 2 Energy. Draw 2,~,images/art/companion-cube.png,5
+Repair Kit,Resource,5,0,0,~,0,~,0,~,Repair 50 from your Scrapbots,~,images/art/mighty-spanner.png,3
 Magnet Trap,Resource,6,0,0,~,0,~,0,~,Exhaust all enemy Scrapbots,~,images/art/tesla-turret.png,2
-Logic Bomb,Resource,7,0,0,~,0,~,0,~,Draw 3 cards. Deal 30 damage to the center Lane and 10 splash damage,~,images/art/cpu-shot.png,1
+Logic Bomb,Resource,7,0,0,~,0,~,0,~,Draw 3. 30 damage to the center Lane and 10 splash damage,~,images/art/cpu-shot.png,1
 Fusion Cell,Resource,8,0,0,~,0,~,0,~,Ready each of your Scrapbots. You may move any of your Scrapbots into an empty Lane,~,images/art/energise.png,1
-Head Trauma,Wound,0,0,0,~,0,~,0,~,~,Draw phase: Discard all Wounds and draw 2 cards for each. This effect may only happen once per turn,images/art/knockout.png,20
+Brain Damage,Wound,0,0,0,~,0,~,0,~,~,Draw phase: Discard all Wounds and draw 2 cards for each. This effect may only occur once per turn,images/art/knockout.png,20
