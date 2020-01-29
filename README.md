@@ -42,7 +42,7 @@ The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler t
 - Magnet Trap x2
 - Logic Bomb x1
 - Fusion Cell x1
-- Head Trauma x20
+- Brain Damage x20
 
 ## Artwork
 
