@@ -9,7 +9,7 @@ CARDSIZE=2.75,3.75
 BORDER=NONE
 DPI=300
 
-ZOOM = 83
+ZOOM = 97
 
 ; dataset
 LINKMULTI = amount
@@ -96,4 +96,4 @@ IF = [energy] <> "0"
   FONT = Share Tech Mono, 22, T, #000
 ENDIF
 
-RECTANGLE = 1-[count], .19, .19, 2.38, 3.38, #000000, empty, .125
+RECTANGLE = 1-[count], .19, .19, 2.38, 3.38, #000000, empty, .01

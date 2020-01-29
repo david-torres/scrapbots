@@ -9,7 +9,7 @@ CARDSIZE=2.75,3.75
 BORDER=NONE
 DPI=300
 
-;ZOOM = 83
+ZOOM = 83
 
 ; dataset
 LINK = "scrapbots.csv", name, type, cost, energy, attack1cost, attack1, attack2cost, attack2, health, component, tactic, wound, image, amount
@@ -95,8 +95,9 @@ IF = [energy] <> "0"
   FONT = Share Tech Mono, 22, T, #000
 ENDIF
 
-RECTANGLE = 1-[count], .19, .19, 2.38, 3.38, #000000, empty, .125
+; border
+RECTANGLE = 1-[count], .19, .19, 2.38, 3.38, #000000, empty, .01
 
-;Comment the lines below before uploading
+; Bleed lines: Comment the lines below before uploading
 ;RECTANGLE=1-[count],0.125,0.125,2.5,3.5,#FF0000,empty,0.01
 ;RECTANGLE=1-[count],0.25,0.25,2.25,3.25,#0000FF,empty,0.01
