@@ -1,5 +1,6 @@
 name,type,cost,energy,attack1cost,attack1,attack2cost,attack2,health,component,tactic,wound,image,amount
-Spare Parts,Component,2,1,0,~,0,~,0,~,~,~,images/art/mechanical-arm.png,16
+Spare Parts,Component,1,0,0,~,0,~,0,"Remove this card from the game, Gain 3 Scrap",~,~,images/art/mechanical-arm.png,8
+Circuitry,Component,2,1,0,~,0,~,0,"Remove this card from the game, Gain 4 Energy",~,~,images/art/circuitry.png,8
 Drone,Scrapbot,4,0,2,10 damage,4,10 damage. Draw 1,40,~,~,~,images/art/cyber-eye.png,8
 Scout,Scrapbot,5,0,3,20 damage,5,"20 damage. Flip a coin: if heads, 10 splash damage",50,~,~,~,images/art/walking-turret.png,8
 Sentinel,Scrapbot,6,0,4,"Draw 1. Flip a coin: if heads, 30 damage",6,"30 damage. Flip a coin: if heads, draw 2",60,~,~,~,images/art/battle-mech.png,5
