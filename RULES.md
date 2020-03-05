@@ -4,7 +4,7 @@ The objective of the game is to defeat the opposing Mechanic by dealing more Wou
 
 ### Setup
 
-Each player starts with an initial personal deck consisting of 8 Spare Parts. Put the 20 Brain Damage (Wound) cards face-up in a stack near the play area. All remaining cards are shuffled and become the center deck. A row of 3 empty spaces in front of each player represent the Lanes which Scrapbots will be built in. Deal 5 cards from the center deck face-up on the side as the Market. Each player draws a starting hand, the player going first may only draw three cards for the starting hand. The player going second draws five. Players will take turns, with control passing to the other player after each draw phase.
+Each player starts with an initial personal deck consisting of 4 Spare Parts and 4 Circuitry. Put the 20 Brain Damage (Wound) cards face-up in a stack near the play area. All remaining cards are shuffled and become the main deck. A row of 3 empty spaces in front of each player represent the Lanes which Scrapbots will be built in. Deal 5 cards from the main deck face-up as the Market. Each player draws a starting hand, the player going first may only draw three cards for the starting hand. The player going second draws five. Players will take turns, with control passing to the other player after each draw phase.
 
 ### Turn Phases
 
@@ -21,7 +21,7 @@ Each turn, the following phases occur:
 **Cleanup Phase**
 
 - unused Scrap and Energy is removed from your pool
-- Ready (flip face-up) any Exhausted Scrapbots in your Lanes
+- Ready (turn vertical) any Exhausted Scrapbots in your Lanes
 
 **Draw Phase**
 
@@ -50,10 +50,10 @@ Discard a Component card from your hand to add its Energy value to your pool. Yo
 Discard a Resource card from your hand to add its Energy value to your pool. You do not gain Scrap when a card is discarded for Energy. You may choose to follow the "Energy" card text.
 
 **Buy cards from the Market**
-Remove Scrap from your pool equal to the value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the center deck.
+Remove Scrap from your pool equal to the value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the main deck.
 
 **Build a Scrapbot**
-Play a Scrapbot from your hand into an empty Lane. Scrapbots cannot be moved or replaced from their Lane once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted (flipped face-down). There are only 3 Lanes to build in so you cannot have more than 3 Scrapbots in play at once.
+Play a Scrapbot from your hand into an empty Lane. Scrapbots cannot be moved or replaced from their Lane once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted (turned sideways). There are only 3 Lanes to build in so you cannot have more than 3 Scrapbots in play at once.
 
 **Activate a Component**
 Choose one of your Ready Scrapbots to activate the Component. Play a Component card from your hand and follow the card text then put that card into your discard pile. You do not gain Scrap or Energy when using this effect.
@@ -63,7 +63,7 @@ You may not Activate a component if you do not have a Ready Scrapbot in play.
 **Attack with a Scrapbot**
 Only Scrapbots that are Ready may attack.
 
-Exhaust (flip face-down) a Scrapbot to indicate that it has used an attack.
+Exhaust (turn sideways) a Scrapbot to indicate that it has used an attack.
 
 You must choose to use a Scrapbot attack that has an Energy cost less than or equal to the amount of Energy currently in your pool.
 
@@ -91,7 +91,7 @@ The game ends when the last Wound has been dealt. Each player adds up all Wounds
 
 activate: A powerful effect provided by a component. A component can only be activated using a Ready Scrapbot. Resolve the card text then put the component into your discard pile. You do not gain Scrap or Energy when a Component is activated.
 
-center deck: All the cards that are not part of the Starting decks or the Wounds stack form the center deck. Cards dealt to the Market are dealt from the center deck.
+main deck: All the cards that are not part of the Starting decks or the Wounds stack form the main deck. Cards dealt to the Market are dealt from the main deck.
 
 component: A Component can be discarded to provide Energy or Scrap or they can be activated on a Ready Scrapbot for a powerful effect.
 
@@ -105,11 +105,11 @@ health: How much damage a Scrapbot can sustain before being destroyed.
 
 lane: The play area has 3 Lanes. Each player will build Scrapbots in their end of each Lane.
 
-market: The row of cards currently available for purchase using Scrap. Cards are dealt to the Market from the center deck.
+market: The row of cards currently available for purchase using Scrap. Cards are dealt to the Market from the main deck.
 
 pool: An imaginary holding area for the resources (Scrap and Energy) you generate during your turn.
 
-ready: Flip a Scrapbot face-up to Ready it. Only Ready Scrapbots may attack.
+ready: Turn a Scrapbot vertical to Ready it. Only Ready Scrapbots may attack.
 
 repair: Remove damage counters from a Scrapbot.
 
