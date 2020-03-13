@@ -26,7 +26,8 @@ The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler t
 
 [Card Album](https://imgur.com/a/cb9aYC6)
 
-- Spare Parts x16
+- Spare Parts x8
+- Circuitry x8
 - Drone x8
 - Scout x8
 - Sentinel x5

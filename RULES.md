@@ -71,7 +71,7 @@ Add a damage counter to the opposing Scrapbot for each 10 points of damage dealt
 #### Dealing Damage
 
 *Dealing Splash Damage*
-Splash damage is dealt to Lanes that are adjacent to the source of damage. E.g. If a Scrapbot deals splash damage from the center lane, then both the left and right lane would receive damage. However, if a Scrapbot were to deal damage from the left (or right) lane, it would only deal splash damage to the adjacent (center) lane.
+Splash damage is dealt to Lanes that are adjacent to the source of damage. E.g. If a Scrapbot deals 10 splash damage when attacking from the center lane, then both the left and right lane would each receive 10 damage. However, if a Scrapbot were to deal 10 splash damage when attacking from the left (or right) lane, it would only deal 10 damage to the adjacent (center) lane.
 
 *Destroying Scrapbots*
 If the damage dealt after an attack would equal or exceed the amount of Health that the opposing Scrapbot has, that Scrapbot is destroyed. Place the destroyed Scrapbot in its owner's discard pile.
