@@ -55,12 +55,12 @@ Remove Scrap from your pool equal to the value of a card in the Market and add t
 Play a Scrapbot from your hand into an empty Lane. Scrapbots cannot be moved or replaced from their Lane once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted (turned sideways). There are only 3 Lanes to build in so you cannot have more than 3 Scrapbots in play at once.
 
 **Activate a Component**
-Choose one of your Ready (flipped face-up) Scrapbots to activate the Component. Play a Component card from your hand and follow the card text then put that card into your discard pile. You do not gain Scrap or Energy when using this effect.
+Choose one of your Ready (turned vertical) Scrapbots to activate the Component. Play a Component card from your hand and follow the card text then put that card into your discard pile. You do not gain Scrap or Energy when using this effect.
 
-You may not Activate a component if you do not have a Ready (flipped face-up) Scrapbot in play.
+You may not Activate a component if you do not have a Ready (turned vertical) Scrapbot in play.
 
 **Attack with a Scrapbot**
-Only Scrapbots that are Ready (flipped face-up) may attack.
+Only Scrapbots that are Ready (turned vertical) may attack.
 
 Exhaust (turn sideways) a Scrapbot to indicate that it has used an attack.
 
@@ -98,7 +98,7 @@ destroy: When a Scrapbot is destroyed it is placed in its owner discard pile.
 
 energy: Components and Resources can be used to provide energy. Energy is used by a scrapbot to power its attacks. Gain energy by discarding Components and Resources from your hand.
 
-exhausted: Flip a scrapbot face-down to Exhaust it. Exhausted scrapbots may not attack.
+exhausted: Turn a scrapbot sideways to Exhaust it. Exhausted scrapbots may not attack.
 
 health: How much damage a Scrapbot can take before being destroyed.
 
