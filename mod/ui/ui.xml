@@ -1,0 +1,46 @@
+<!-- Welcome popup -->
+<Panel
+    id="welcome"
+    height="620"
+    width="520"
+    color="rgba(0,0,0,0.5)"
+    rectAlignment="UpperCenter"
+    offsetXY="0 -80"
+    hideAnimation="FadeOut"
+    animationDuration="0.5"
+    allowDragging="true"
+    returnToOriginalPositionWhenReleased="false"
+    >
+    <Image
+        image="ScrapbotsLogo"
+        preserveAspect="false"
+        height="562.5"
+        width="412.5"
+        rectAlignment="MiddleCenter"
+        >
+    </Image>
+    <Button
+        onClick="startGame"
+        height="400"
+        width="400"
+        color="rgba(0,0,0,0.7)"
+        text="Start Game"
+        textColor="red"
+        fontStyle="Bold"
+        fontSize="32"
+        rectAlignment="MiddleCenter"
+        >
+    </Button>
+    <Button
+        onClick="hideWelcome"
+        height="50"
+        width="50"
+        color="rgba(0,0,0,0.7)"
+        text="X"
+        textColor="rgba(0,0,0,0.9)"
+        fontStyle="Bold"
+        fontSize="30"
+        rectAlignment="UpperRight"
+        >
+    </Button>
+</Panel>

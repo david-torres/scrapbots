@@ -40,13 +40,13 @@ You may perform the following actions any number of times during your Main Phase
 - Attack with a Scrapbot
 
 **Gain Scrap**
-Discard any card from your hand to add its Scrap value to your pool. (You do not gain Energy if a card is discarded for Scrap)
+Discard any card from your hand to add its Scrap value to your pool. (You do not gain Energy if a card is discarded for Scrap). If that card is a Resource, you may choose to follow the card text.
 
 **Gain Energy from a Component**
 Discard a Component card from your hand to add its Energy value to your pool. You do not gain Scrap. You do not resolve its Activate effect.
 
 **Gain Energy from a Resource**
-Discard a Resource card from your hand to add its Energy value to your pool. You do not gain Scrap. You may choose to follow the "Energy" card text.
+Discard a Resource card from your hand to add its Energy value to your pool. You do not gain Scrap. You may choose to follow the card text.
 
 **Buy cards from the Market**
 Remove Scrap from your pool equal to the value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the main deck.
