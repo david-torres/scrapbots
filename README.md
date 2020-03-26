@@ -12,7 +12,7 @@ Scrapbots is a deck-building card-battler game set in a post-apocalyptic junk-pu
 
 ## Design Goals
 
-The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler that is easy to learn but still has enough strategic/tactical depth to maintain a serious player’s interest. Scrapbots games are intended to last 20-30 minutes.
+The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler that is easy to learn but still has enough strategic/tactical depth to maintain a serious player’s interest. Scrapbots games are intended to last ~30 minutes.
 
 ## Full Rules
 
@@ -28,13 +28,15 @@ The goal of Scrapbots design is to be a quick-to-play, fast-paced card battler t
 
 - Spare Parts x8
 - Circuitry x8
-- Drone x8
-- Scout x8
+- Sentry Gun x6
+- Drone x5
+- Scout x5
 - Sentinel x5
 - Enforcer x3
 - Golem x2
-- Armor Plate x8
-- Chainsaw x8
+- Plasma Dart x6
+- Blaster x5
+- Chainsaw x5
 - Servomotor x5
 - Laser Cannon x3
 - Rocket Pod x2
