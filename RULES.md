@@ -26,38 +26,58 @@ Each turn, the following phases occur:
 **Draw Phase**
 
 - draw a hand of 5 cards. If at any point in the game you need to draw a card but are unable to because your deck is empty, shuffle your discard pile and it becomes your deck.
-- If you have any Wounds in your hand, discard all of them. Draw 2 cards for each Wound discarded this way. This effect may only occur once per turn.
+- if you have any Wounds in your hand, discard all of them. Draw 2 cards for each Wound discarded this way. This effect may only occur once per turn.
 
 ### Actions
 
 You may perform the following actions any number of times during your Main Phase:
-
-- Gain Scrap
-- Gain Energy
-- Buy cards from the Market
-- Build a Scrapbot
-- Activate a Component
+- Buy from the Market
+- Play a Component
+- Play a Resource
+- Play a Scrapbot
 - Attack with a Scrapbot
 
-**Gain Scrap**
-Discard any card from your hand to add its Scrap value to your pool. (You do not gain Energy if a card is discarded for Scrap)
 
-**Gain Energy from a Component**
-Discard a Component card from your hand to add its Energy value to your pool. You do not gain Scrap. You do not resolve its Activate effect.
+**Buy from the Market**
 
-**Gain Energy from a Resource**
-Discard a Resource card from your hand to add its Energy value to your pool. You do not gain Scrap. You may choose to follow the "Energy" card text.
+Remove Scrap from your pool equal to the Scrap value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the main deck.
 
-**Buy cards from the Market**
-Remove Scrap from your pool equal to the value of a card in the Market and add that card to your discard pile. Whenever a card is removed from the Market, deal a new card to the Market from the main deck.
 
-**Build a Scrapbot**
-Play a Scrapbot from your hand into an empty Lane. Scrapbots cannot be moved or replaced from their Lane once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted (turned sideways). There are only 3 Lanes to build in so you cannot have more than 3 Scrapbots in play at once.
+**Play a Component**
 
-**Activate a Component**
-Choose one of your Ready (turned vertical) Scrapbots to activate the Component. Play a Component card from your hand and follow the card text then put that card into your discard pile. You do not gain Scrap or Energy when using this effect.
+Play a Component card from your hand. Choose its effect then place it in your discard pile.
+
+You may choose *one* of the following effects:
+- Add its Scrap value to your pool
+- Add its Energy value to  your pool
+- Activate the Component
+
+_Activate:_
+Choose one of your Ready (turned vertical) Scrapbots to Activate the Component. Follow the card text then put the Component into your discard pile.
 
 You may not Activate a component if you do not have a Ready (turned vertical) Scrapbot in play.
+
+
+**Play a Resource**
+
+Play a Resource card from your hand. Choose its effect then place it in your discard pile:
+
+You may choose *one* of the following effects:
+- Add its Scrap value to your pool
+- Add its Energy value to your pool
+
+You may resolve the card text.
+
+
+**Play a Scrapbot**
+
+Play a Scrapbot card from your hand. Choose its effect:
+- Discard to add its Scrap value to your pool
+- Build
+
+_Build:_
+Place a Scrapbot card from your hand into an empty Lane. Scrapbots cannot be moved or replaced from their Lane once they have been built. Scrapbots remain in play until destroyed. Scrapbots enter play Exhausted (turned sideways). There are only 3 Lanes to build in so you cannot have more than 3 Scrapbots in play at once.
+
 
 **Attack with a Scrapbot**
 
@@ -80,7 +100,7 @@ If the damage dealt after an attack would equal or exceed the amount of Health t
 Excess damage is ignored (i.e. does not carry over to damage the opposing player).
 
 *Dealing Wounds*
-If there is no Scrapbot in an attacked Lane then the opposing player is dealt a Wound for each 10 points of undefended damage. Wounds are placed in your opponents discard pile.
+If there is no Scrapbot in a Lane that is dealt damage then the opposing player is dealt a Wound for each 10 points of undefended damage. Wounds are placed in your opponents discard pile.
 
 
 ### Winning the Game
@@ -91,13 +111,11 @@ The game ends when the last Wound has been dealt. Each player adds up all Wounds
 
 activate: A powerful effect provided by a component. A component can only be activated using a Ready Scrapbot. Resolve the card text then put the component into your discard pile.
 
-main deck: All the cards that are not part of the Starting decks or the Wounds stack form the main deck. Cards dealt to the Market are dealt from the main deck.
-
-component: A component can be discarded to provide energy or scrap or they can be activated on a Ready Scrapbot for a powerful effect.
+component: A component can be played to provide energy or scrap or they can be Activated on a Ready Scrapbot for a powerful effect.
 
 destroy: When a Scrapbot is destroyed it is placed in its owner discard pile.
 
-energy: Components and Resources can be used to provide energy. Energy is used by a scrapbot to power its attacks. Gain energy by discarding Components and Resources from your hand.
+energy: Components and Resources can be played to provide energy. Energy is used by a scrapbot to power its attacks.
 
 exhausted: Turn a scrapbot sideways to Exhaust it. Exhausted scrapbots may not attack.
 
@@ -105,22 +123,22 @@ health: How much damage a Scrapbot can take before being destroyed.
 
 lane: The play area has 3 Lanes. Each player will build Scrapbots in their end of each Lane.
 
+main deck: All the cards that are not part of the Starting decks or the Wounds stack form the main deck. Cards dealt to the Market are dealt from the main deck.
+
 market: The row of cards currently available for purchase using Scrap. Cards are dealt to the Market from the main deck.
 
-pool: An imaginary holding area for the resources you generate during your turn.
+pool: An imaginary holding area for the Scrap and Energy generated during your turn. All unspent Scrap and Energy is emptied from your pool during the Cleanup Phase.
 
 ready: Turn a Scrapbot vertical to Ready it. Only Ready Scrapbots may attack.
 
-repair: Remove damage counters from a Scrapbot.
+resource: Resources can be played for Scrap or Energy. They also provide an additional beneficial effect.
 
-resource: Resources can be discarded for Scrap or Energy. When discarded for Energy they gain an additional effect.
-
-scrap: The primary currency of Scrapbots, used to obtain cards from the Market. Gain scrap by discarding cards from your hand.
+scrap: The primary currency of Scrapbots, used to obtain cards from the Market. Gain scrap by playing cards from your hand.
 
 scrapbot: The units of Scrapbots. Only Ready scrapbots may attack. Scrapbots need energy to power their attacks.
 
 splash damage: Splash damage is dealt to Lanes adjacent to the original source of damage.
 
-starting deck: Each player begins the game with a Starting deck. The Starting deck includes 8 "Spare Parts"
+starting deck: Each player begins the game with a Starting deck. The Starting deck includes 4 "Spare Parts" and 4 "Circuitry"
 
 wound: Cards added to a player's deck that represent damage dealt to that player. Wounds have a special effect when drawn during the draw phase. The game ends when all 20 Wounds have been dealt.

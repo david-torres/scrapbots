@@ -9,18 +9,16 @@ CARDSIZE=2.75,3.75
 BORDER=NONE
 DPI=300
 
-ZOOM = 83
+;ZOOM = 83
 
 ; dataset
-LINK = "scrapbots.csv", name, type, cost, energy, attack1cost, attack1, attack2cost, attack2, health, component, tactic, wound, image, amount
+LINK = "scrapbots.csv", name, type, cost, energy, attack1cost, attack1, attack2cost, attack2, health, component, resource, wound, image, amount
 
 ; vars
-[count] = 18
+[count] = 20
 [scrap-icon] = "images/art/auto-repair.png"
-[tactic-icon] = "images/art/digital-trace.png"
 [health-icon] = "images/art/techno-heart.png"
 [energy-icon] = "images/art/battery-pack.png"
-[attack-icon] = "images/art/cogsplosion.png"
 
 ; name
 FONT = Share Tech Mono, 16, T, #000
@@ -50,7 +48,6 @@ ENDIF
 ; attack1
 IF = [attack1] <> "~"
   RECTANGLE = 1-[count], .25, 2.6, 82%, .4, #e2e2e2, #e2e2e2
-  ;IMAGE = 1-[count], [attack-icon], .4, 2.55, .2, .2, 0, T
   FONT = Roboto Mono, 6, T, #000
   TEXT = 1-[count], "([attack1cost] Energy)", .35, 2.6, 78%, 100%, right, wordwrap
   PATTERN = 1-[count], [energy-icon], [attack1cost], .35, 2.47, 80%, 10%, .1, .1, 0, T, left, center
@@ -61,7 +58,6 @@ ENDIF
 ; attack2
 IF = [attack2] <> "~"
   RECTANGLE = 1-[count], .25, 3.1, 82%, .4, #e2e2e2, #e2e2e2
-  ;IMAGE = 1-[count], [attack-icon], .4, 2.95, .2, .2, 0, T
   FONT = Roboto Mono, 6, T, #000
   TEXT = 1-[count], "([attack2cost] Energy)", .35, 3.1, 78%, 100%, right, wordwrap
   PATTERN = 1-[count], [energy-icon], [attack2cost], .35, 2.97, 80%, 10%, .1, .1, 0, T, left, center
@@ -69,18 +65,16 @@ IF = [attack2] <> "~"
   TEXT = 1-[count], "Attack: [attack2]", .35, 3.2, 78%, 100%, left, wordwrap
 ENDIF
 
-; tactic
-IF = [tactic] <> "~"
+; resource
+IF = [resource] <> "~"
   RECTANGLE = 1-[count], .25, 2.5, 82%, .5, #e2e2e2, #e2e2e2
-  ;IMAGE = 1-[count], [tactic-icon], .4, 2.55, .2, .2, 0, T
   FONT = Roboto Mono, 8, T, #000
-  TEXT = 1-[count], "Energy: [tactic]", .35, 2.53, 78%, 100%, left, wordwrap
+  TEXT = 1-[count], "[resource]", .35, 2.53, 78%, 100%, left, wordwrap
 ENDIF
 
 ; component
 IF = [component] <> "~"
   RECTANGLE = 1-[count], .25, 2.5, 82%, .5, #e2e2e2, #e2e2e2
-  ;IMAGE = 1-[count], [component-icon], .4, 2.55, .2, .2, 0, T
   FONT = Roboto Mono, 8, T, #000
   TEXT = 1-[count], "Activate: [component]", .35, 2.53, 78%, 100%, left, wordwrap
 ENDIF
@@ -94,9 +88,11 @@ ENDIF
 
 ; energy
 IF = [energy] <> "0"
-  PATTERN = 1-[count], [energy-icon], [energy], .025, 1.45, 100%, 100%, .25, .25, 0, T, center, center
+ ;PATTERN = 1-[count], [energy-icon], [energy], .025, 1.45, 100%, 100%, .25, .25, 0, T, center, center
 
   FONT = Share Tech Mono, 22, T, #000
+  TEXT = 1-[count], [energy], 0, 3.25, 50%, 10%, right
+  IMAGE = 1-[count], [energy-icon], 1.35, 3.3, .25, .25, 0, T
 ENDIF
 
 ; border
