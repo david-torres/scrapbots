@@ -1,0 +1,21 @@
+## Card List
+- Spare Parts x8
+- Circuitry x8
+- Sentry Gun x6
+- Drone x5
+- Scout x5
+- Sentinel x5
+- Enforcer x3
+- Golem x2
+- Plasma Dart x6
+- Blaster x5
+- Chainsaw x5
+- Servomotor x5
+- Laser Cannon x3
+- Rocket Pod x2
+- Supply Crate x5
+- Repair Kit x3
+- Magnet Trap x2
+- Logic Bomb x1
+- Fusion Cell x1
+- Head Trauma x20
