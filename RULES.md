@@ -60,6 +60,7 @@ Choose one of your Ready (turned vertical) Scrapbots to activate the Component. 
 You may not Activate a component if you do not have a Ready (turned vertical) Scrapbot in play.
 
 **Attack with a Scrapbot**
+
 Only Scrapbots that are Ready (turned vertical) may attack.
 
 Exhaust (turn sideways) a Scrapbot to indicate that it has used an attack.
