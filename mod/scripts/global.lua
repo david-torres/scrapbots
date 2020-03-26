@@ -4,8 +4,8 @@ p1DeckGUID = "8ef746"
 p2DeckGUID = "8e0911"
 
 -- discards (scripting zones)
-p1DiscardGUID = "0a634a"
-p2DiscardGUID = "a645c0"
+p1DiscardGUID = "b34f2a"
+p2DiscardGUID = "c295a3"
 
 -- market (scripting zones)
 marketSlot0GUID = "991698"
@@ -143,6 +143,7 @@ end
 --
 -- Util
 --
+
 function logger(s)
     if debugging == true then
         print(s)
