@@ -59,7 +59,7 @@ You may choose *one* of the following effects:
 _Activate:_
 Choose one of your Ready (turned vertical) Scrapbots to Activate the Component. Follow the card text then put the Component into your discard pile.
 
-You may not Activate a component if you do not have a Ready (turned vertical) Scrapbot in play.
+You may not Activate a component if you do not have a Ready (turned vertical) Scrapbot in play. Activating a Component does NOT cause the Scrapbot to become Exhausted.
 
 
 **Play a Resource**
@@ -87,7 +87,7 @@ Place a Scrapbot card from your hand into an empty Lane. Scrapbots cannot be mov
 
 Only Scrapbots that are Ready (turned vertical) may attack.
 
-Exhaust (turn sideways) a Scrapbot to indicate that it has used an attack.
+Choose a Scrapbot. Spend Energy from your pool to power a Scrapbot attack. Exhaust (turn sideways) that Scrapbot to indicate that it has used an attack.
 
 You must choose to use a Scrapbot attack that has an Energy cost less than or equal to the amount of Energy currently in your pool.
 

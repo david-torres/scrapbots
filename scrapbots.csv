@@ -1,6 +1,6 @@
 name,type,cost,energy,attack1cost,attack1,attack2cost,attack2,health,component,resource,wound,image,amount
-Spare Parts,Component,1,0,0,~,0,~,0,~,~,~,images/art/mechanical-arm.png,8
-Circuitry,Component,2,1,0,~,0,~,0,~,~,~,images/art/circuitry.png,8
+Spare Parts,Component,2,0,0,~,0,~,0,~,~,~,images/art/mechanical-arm.png,8
+Circuitry,Component,1,1,0,~,0,~,0,~,~,~,images/art/circuitry.png,8
 Sentry Gun,Scrapbot,3,0,2,10 damage,0,~,20,~,~,~,images/art/sentry-gun.png,6
 Drone,Scrapbot,4,0,2,10 damage,4,10 damage. Draw 1,40,~,~,~,images/art/cyber-eye.png,5
 Scout,Scrapbot,5,0,3,20 damage,5,"20 damage. Flip a coin: if heads, 10 splash damage",50,~,~,~,images/art/walking-turret.png,5

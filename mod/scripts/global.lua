@@ -1,5 +1,5 @@
 --- decks
-deckGUID = "5016eb"
+deckGUID = "99daf5"
 p1DeckGUID = "8ef746"
 p2DeckGUID = "8e0911"
 
